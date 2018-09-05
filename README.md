@@ -214,7 +214,7 @@ raw_data            8 seconds ago       0B
 Now let's put the data we will use for training into this repo. You could use the [full data set of GitHub issues from here](https://www.kaggle.com/davidshinn/github-issues), but our model will take a little while to train on that data. As such, we have created a [sampled version of the data](https://nyc3.digitaloceanspaces.com/workshop-data/github_issues_medium.csv) set that's much smaller and good for experimentation. To "commit" this smaller version of the data set into our `raw_data` repository:
 
 ```
-$ pachctl put-file raw_data master github_issues_medium.csv -f https://nyc3.digitaloceanspaces.com/workshop-data/github_issues_medium.csv
+$ pachctl put-file raw_data master -f https://nyc3.digitaloceanspaces.com/workshop-data/github_issues_medium.csv
 ```
 
 We will now see that file versioned in the data repository:
